@@ -9,13 +9,13 @@ public class Quote {
     private String author;
     private long id;
 
-    // Constructor with id, quote, and author.  Seeder made quotes.
+    // Constructor with id, quote, and author.  For retrieving quotes.
     public Quote(long id, String quote, String author) {
         this.id = id;
         this.quote = quote;
         this.author = author;
     }
-    // Constructor with quote, author.  User made quotes.
+    // Constructor with quote, author.  User made quotes, seeder made quotes.
     public Quote(String quote, String author) {
         this.quote = quote;
         this.author = author;

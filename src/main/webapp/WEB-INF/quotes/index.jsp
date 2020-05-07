@@ -1,5 +1,8 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
+<%--------------------  JSP FOR GETTING ALL QUOTES  ---------------------%>
+
 <html>
 <head>
     <meta charset="utf-8">
@@ -18,7 +21,6 @@
         <li><a href="/quotes">List All Quotes</a></li>
         <li><a href="/quotes/random">Get a random quote</a></li>
     </ul>
-
 </nav>
 
 <div class="container">
@@ -31,6 +33,7 @@
             <p>Author: ${quote.author}</p> <%--  We're displaying the first two here --%>
         </div>
     </c:forEach>
+
 </div>
 </body>
 </html>
