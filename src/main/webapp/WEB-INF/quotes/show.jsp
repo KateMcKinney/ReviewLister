@@ -24,8 +24,9 @@
 
 
 <div class="container">
-    <h1>Quote: ${quote.quote}</h1>
-    <p>Author: ${quote.author}</p>
+    <%--  This is where we access the Quote object made in RandomQuoteServlet.java --%>
+    <h1>Quote: ${quote.quote}</h1> <%--  Each Quote object has an author, quote, and id --%>
+    <p>Author: ${quote.author}</p> <%--  We're displaying the first two here --%>
 
     <a href="/quotes/random" class="btn btn-primary">Get another random quote!</a>
 </div>
