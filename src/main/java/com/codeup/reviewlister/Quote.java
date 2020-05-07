@@ -1,22 +1,28 @@
 package com.codeup.reviewlister;
 
+// ------------------  THE BEAN  ------------------- //
+
 public class Quote {
 
+    // All the things included in each Quote object
     private String quote;
     private String author;
     private long id;
 
+    // Constructor with id, quote, and author.  Seeder made quotes.
     public Quote(long id, String quote, String author) {
         this.id = id;
         this.quote = quote;
         this.author = author;
     }
-
+    // Constructor with quote, author.  User made quotes.
     public Quote(String quote, String author) {
         this.quote = quote;
         this.author = author;
     }
 
+    // Getters and Setters for:
+    // Quotes
     public String getQuote() {
         return quote;
     }
@@ -24,7 +30,7 @@ public class Quote {
     public void setQuote(String quote) {
         this.quote = quote;
     }
-
+    // Authors
     public String getAuthor() {
         return author;
     }
@@ -32,7 +38,7 @@ public class Quote {
     public void setAuthor(String author) {
         this.author = author;
     }
-
+    // IDs
     public long getId() {
         return id;
     }

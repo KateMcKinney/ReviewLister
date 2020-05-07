@@ -25,10 +25,10 @@
 
     <h1>Here Are all the quotes!</h1>
 
-    <c:forEach var="quote" items="${quotes}">
+    <c:forEach var="quote" items="${quotes}"> <%--  This is where we access the ArrayList<Quote> made in QuotesIndexServlet.java --%>
         <div class="col-md-6">
-            <h2>${quote.quote}</h2>
-            <p>Author: ${quote.author}</p>
+            <h2>${quote.quote}</h2> <%--  Each Quote object has an author, quote, and id --%>
+            <p>Author: ${quote.author}</p> <%--  We're displaying the first two here --%>
         </div>
     </c:forEach>
 </div>
